@@ -1,0 +1,47 @@
+{
+    "1H_MRS_Metabolomics": {
+        "Baseline_ATP_mM": 3.0,
+        "Baseline_Glutamate_mM": 0.01,
+        "Saddle_Node_Threshold": 0.5
+    },
+    "Epidemiological_Allostatic_Proxies": {
+        "Internal_Visceral_Load": {
+            "GERD_OR": 1.48,
+            "IBS_OR": 1.77,
+            "IBD_RR": 2.1,
+            "Systemic_Pain_OR": 3.2
+        },
+        "External_Psychosocial_Load": {
+            "Occupational_Stress_OR": 1.7,
+            "Financial_Strain_OR": 1.6,
+            "Social_Isolation_RR": 1.9,
+            "Childhood_Trauma_ACEs_Max_OR": 3.75
+        },
+        "Vagal_Transfer_Coefficient": 0.8
+    },
+    "ISB_2_0_Expansions": {
+        "Neuroplasticity_Recovery_Rho": 0.15,
+        "Recovery_Threshold_Theta": 1.2,
+        "Stochastic_Noise_Sigma": 0.08,
+        "BBB_Permeability_Delay_Days": 2.5,
+        "Epigenetic_Drift_RNA_Velocity": {
+            "Transcription_Decay_Lambda": "Dynamically_Derived_In_Integration",
+            "Splicing_Rate_Beta": 0.8,
+            "Degradation_Rate_Gamma": 0.5,
+            "Velocity_Source_Anchor": "La Manno et al. (2018) / Adewale et al. (2024)"
+        }
+    },
+    "Thermodynamic_Coupling": {
+        "ATP_per_Glutamate_Stoichiometry": 2.0,
+        "Source": "Magistretti & Pellerin"
+    },
+    "Mitochondrial_Senescence": {
+        "Decline_Rate_Per_Year": 0.008,
+        "Peak_Optimal_Age": 30.0
+    },
+    "Neurophysiology_Anchors": {
+        "Vagal_Hyperfiring_Multiplier": 2.5,
+        "EAAT_Downregulation_Max": 0.5,
+        "Max_Metabolic_Capacity_Limit": 4.0
+    }
+}
