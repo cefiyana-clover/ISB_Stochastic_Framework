@@ -64,7 +64,6 @@ python src/script04_visual_rendering.py
 To ensure operational transparency while protecting theoretical intellectual property, this project adopts a dual-licensing structure:
  * **Computational Source Code:** Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. The SDE-PDE execution framework remains open, free, and mechanically transparent for the global scientific community.
  * **Theoretical Framework & Manuscript:** The underlying mathematical formulation, architectural concepts, and associated manuscript texts are distributed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license. Academic usage and integration require strict empirical referencing to the original Bioenergetic Stability Index (ISB) architecture.
-```
 
 
 **Academic Correspondence:** cefiyana@fiveleafclover.org
