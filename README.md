@@ -66,3 +66,4 @@ To ensure operational transparency while protecting theoretical intellectual pro
  * **Theoretical Framework & Manuscript:** The underlying mathematical formulation, architectural concepts, and associated manuscript texts are distributed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license. Academic usage and integration require strict empirical referencing to the original Bioenergetic Stability Index (ISB) architecture.
 ```
 
+Academic Correspondence: cefiyana@fiveleafclover.org 
