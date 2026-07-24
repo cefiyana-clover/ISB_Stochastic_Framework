@@ -3,7 +3,7 @@
 
 **Status:** Production-Ready | **Validation:** Empirical In-Vivo/In-Vitro Anchors | **Architecture:** OS-Agnostic  
 
-This repository contains the computational framework for the Bioenergetic Stability Index (ISB). It executes a multi-scale spatiotemporal simulation linking cellular transcriptomics, thermodynamic limits, and macroscopic topological phase transitions within a 6-Dimensional Manifold framework.
+This repository contains the computational framework for the Bioenergetic Stability Index (ISB). It executes a multi-scale spatiotemporal simulation linking cellular transcriptomics, thermodynamic limits, and macroscopic topological phase transitions within a 3D structural connectome.
 
 ## 1. Biophysical Architecture & Micro-Macro Bridge
 
