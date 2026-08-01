@@ -45,6 +45,35 @@ The framework is strictly modularized to maintain procedural transparency and re
 
 Execute the pipeline sequentially to preserve data dependencies. The scripts are OS-Agnostic and automatically anchor the operational directory relative to the execution path.
 
+### A. Empirical Data Integration (Strict Reproducibility)
+To reproduce the exact empirical statistics presented in the manuscript (rather than generating synthetic baseline variances), you must download the foundational multi-modal datasets before execution:
+
+1. Download the raw datasets from Zenodo: [INSERT_YOUR_ZENODO_LINK_HERE]
+2. Extract the files (`ROIxGene_aparcaseg_INT.mat` and `mGluR5_PET_Beliveau_Destrieux.csv`).
+3. Place them directly inside the `ISB_Empirical_Vault/raw_data/` directory (you may need to create these folders manually before the first run).
+
+*(Note: The framework features an autonomous synthetic fallback. If the empirical datasets are absent, the pipeline will generate synthetic variables to maintain execution continuity, but the resulting phase transition probabilities will diverge from the empirical manuscript).*
+
+### B. Pipeline Execution
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/](https://github.com/)[YOUR-USERNAME]/ISB-Stochastic-Framework.git
+cd ISB-Stochastic-Framework
+
+# 2. Install empirically validated dependencies
+pip install -r requirements.txt
+
+# 3. Execute the SDE-PDE Pipeline
+python src/script01_data_ingestion.py
+python src/script02_sde_integration.py
+python src/script03_megasimulation.py
+python src/script04_visual_rendering.py
+
+## 4. Deployment Protocol
+
+Execute the pipeline sequentially to preserve data dependencies. The scripts are OS-Agnostic and automatically anchor the operational directory relative to the execution path.
+
 ```bash
 # 1. Clone the repository
 git clone [https://github.com/](https://github.com/)[YOUR-USERNAME]/ISB-Stochastic-Framework.git
