@@ -1,0 +1,53 @@
+{
+    "Multimodal_31P_1H_MRS_Anchors": {
+        "Baseline_ATP_mM": 3.0,
+        "Baseline_Glutamate_mM": 0.002,
+        "Saddle_Node_Threshold": 0.5,
+        "Anaerobic_Basal_Floor_mM": 0.22
+    },
+    "Bistable_Kinetic_Constants": {
+        "Km_G_EAAT2_mM": 0.02,
+        "Km_ATP_NaKATPase_mM": 0.4,
+        "Km_Auto_Glycolysis_mM": 0.45,
+        "ATP_per_Glutamate_Stoichiometry": 2.0,
+        "Allostatic_Stress_Coupling_k": 0.62,
+        "Extracellular_Spillover_Clearance_k": 0.15,
+        "Network_Diffusion_DG": 0.015
+    },
+    "ISB_2_0_Expansions": {
+        "Glycogen_Rescue_Rho": 0.35,
+        "Crisis_Threshold_Theta_mM": 1.2,
+        "Stochastic_Noise_Sigma_ATP": 0.065,
+        "Stochastic_Noise_Sigma_Glu": 0.025,
+        "BBB_Allostatic_Delay_Days": 45.0,
+        "Epigenetic_Chromatin_SLC1A2": {
+            "Methylation_Repression_Rate_k_meth": 0.0045,
+            "Demethylation_Recovery_Rate_k_demeth": 0.006,
+            "Effective_Maturation_Rate_Beta": 0.25,
+            "Effective_Turnover_Rate_Gamma": 0.12
+        }
+    },
+    "Mitochondrial_Senescence": {
+        "Decline_Rate_Per_Year": 0.0045,
+        "Peak_Optimal_Age": 30.0
+    },
+    "Neurophysiology_Anchors": {
+        "Vagal_Hyperfiring_Multiplier": 1.85,
+        "EAAT_Downregulation_Max": 0.5,
+        "Max_Metabolic_Capacity_Limit": 4.0,
+        "Primary_Insular_Epicenter_Node": 16,
+        "Bilateral_Primary_Insular_Nodes": [
+            16,
+            90
+        ],
+        "Bilateral_Secondary_Insular_Nodes": [
+            17,
+            91
+        ]
+    },
+    "1H_MRS_Metabolomics": {
+        "Baseline_ATP_mM": 3.0,
+        "Baseline_Glutamate_mM": 0.002,
+        "Saddle_Node_Threshold": 0.5
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "GLOBAL_MEAN_REFERENCE": 184.0,
+    "Tier_I_High": {
+        "mean_mtCN": 192.5,
+        "std_mtCN": 16.5,
+        "tier_label": "Tier I (High Reserve)",
+        "legacy_code": "EUR"
+    },
+    "Tier_II_ModHigh": {
+        "mean_mtCN": 186.0,
+        "std_mtCN": 17.5,
+        "tier_label": "Tier II (Moderate-High Reserve)",
+        "legacy_code": "AMR"
+    },
+    "Tier_III_ModLow": {
+        "mean_mtCN": 180.5,
+        "std_mtCN": 18.0,
+        "tier_label": "Tier III (Moderate-Low Reserve)",
+        "legacy_code": "EAS"
+    },
+    "Tier_IV_Low": {
+        "mean_mtCN": 174.0,
+        "std_mtCN": 19.5,
+        "tier_label": "Tier IV (Low/Depleted Reserve)",
+        "legacy_code": "AFR"
+    }
+}
