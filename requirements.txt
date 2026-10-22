@@ -1,0 +1,10 @@
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+torch>=2.0.0
+nilearn>=0.10.2
+matplotlib>=3.7.0
+seaborn>=0.12.2
+joblib>=1.2.0
+abagen>=0.1.3
+neuromaps>=0.0.4
