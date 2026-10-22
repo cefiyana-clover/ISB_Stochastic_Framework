@@ -23,9 +23,9 @@ $$J_{\text{EAAT},i}(A_i, G_i, t) = V_{\max,i}^*(t) \, f_{\text{atp}}(A_i) \, f_{
 
 where $K_{m,\text{ATP}} = 0.400\text{ mM}$, $K_{m,\text{auto}} = 0.450\text{ mM}$, $K_{m,G} = 0.020\text{ mM}$ ($20.0\ \mu\text{M}$), and $\theta_{\text{glyc}} = 1.20\text{ mM}$. The coupled Itô SDE-PDE equations governing cytosolic astrocytic ATP ($A_i(t)$) and extracellular synaptic/perisynaptic glutamate ($G_i(t)$) across each cortical parcel $i \in \{1, \dots, 148\}$ are:
 
-$$dA_i = \left[ P_{\text{glyc},i}^0 + P_{\max,i}^{(m)} f_{\text{auto}}(A_i) + J_{\text{glyc},i}(A_i, R_{\text{rec},i}) - \sigma_{\text{stoich}}\left(J_{\text{EAAT},i}(A_i, G_i, t) + J_{\text{stress},i}(G_i, t) f_{\text{atp}}(A_i)\right) - k_{\text{house},i} A_i \right] dt + \sigma_A A_i \, dW_{A,i}(t)$$
+$$dA_i = \left[ P_{\text{glyc},i}^0 + P_{\max,i}^{(m)} f_{\text{auto}}(A_i) + J_{\text{glyc},i}(A_i, R_{\text{rec},i}) - \sigma_{\text{stoich}}\left(J_{\text{EAAT},i}(A_i, G_i, t) + J_{\text{stress},i}(G_i, t) f_{\text{atp}}(A_i)\right) - k_{\text{house},i} A_i \right] dt + \sigma_A A_i \dW_{A,i}(t)$$
 
-$$dG_i = \left[ J_{\text{syn},i}^0 + V_{\text{influx},i}(t) + J_{\text{spillover},i}(A_i, t) - J_{\text{EAAT},i}(A_i, G_i, t) - k_{\text{spill}} G_i - D_G \sum_{j=1}^{148} L_{ij} G_j \right] dt + \sigma_G G_i \, dW_{G,i}(t)$$
+$$dG_i = \left[ J_{\text{syn},i}^0 + V_{\text{influx},i}(t) + J_{\text{spillover},i}(A_i, t) - J_{\text{EAAT},i}(A_i, G_i, t) - k_{\text{spill}} G_i - D_G \sum_{j=1}^{148} L_{ij} G_j \right] dt + \sigma_G G_i \dW_{G,i}(t)$$
 
 where $\sigma_{\text{stoich}} = 2.0\text{ mol ATP/mol Glu}$ represents the canonical Astrocyte-Neuron Lactate Shuttle (ANLS) and Glutamate-Glutamine cycle stoichiometry ($1.0\text{ ATP}$ for $\text{Na}^+/\text{K}^+$-ATPase extrusion plus $1.0\text{ ATP}$ for Glutamine Synthetase amidation). As chronic allostatic load erodes the local Jacobian determinant toward the fold bifurcation boundary ($\det(J) = 0, \operatorname{Tr}(J) < 0$), multiplicative Langevin fluctuations ($\sigma_A = 0.065\text{ day}^{-1/2}, \sigma_G = 0.025\text{ day}^{-1/2}$) drive Kramers stochastic escape across the critical electrogenic pump failure threshold ($\theta_c = 0.50\text{ mM}$).
 
@@ -39,7 +39,7 @@ Systemic allostatic load ($\Omega_{\text{ext}}$) crosses the blood-brain barrier
 
 $$\frac{dE_i}{dt} = \left(k_{\text{demeth}} \mathcal{B}_m\right)\left(1.0 - E_i(t)\right) - k_{\text{meth}}\left(\Omega_{\text{eff}}(t) - 1.0\right)\left(E_i(t) - (1.0 - \Delta_{\max})\right)$$
 
-$$\frac{du_i}{dt} = \alpha_0 E_i(t) - \beta_{\text{eff}} u_i(t), \qquad \frac{ds_i}{dt} = \beta_{\text{eff}} u_i(t) - \gamma_{\text{eff}} s_i(t), \qquad V_{\max,i}^*(t) = V_{\max,i}^0 \cdot \operatorname{clip}\!\left(\frac{s_i(t)}{s_0}, \, 0.50, \, 1.0\right)$$
+$$\frac{du_i}{dt} = \alpha_0 E_i(t) - \beta_{\text{eff}} u_i(t), \qquad \frac{ds_i}{dt} = \beta_{\text{eff}} u_i(t) - \gamma_{\text{eff}} s_i(t), \qquad V_{\max,i}^*(t) = V_{\max,i}^0 \cdot \operatorname{clip}\!\left(\frac{s_i(t)}{s_0}, \0.50, \1.0 \right)$$
 
 with maturation rate $\beta_{\text{eff}} = 0.25\text{ day}^{-1}$ and functional membrane EAAT2 turnover rate $\gamma_{\text{eff}} = 0.12\text{ day}^{-1}$ ($t_{1/2,\text{EAAT2}} \approx 5.8\text{ days}$).
 
